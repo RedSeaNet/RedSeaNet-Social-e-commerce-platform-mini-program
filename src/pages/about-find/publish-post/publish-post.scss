@@ -1,0 +1,58 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/button.scss";
+@import "~taro-ui/dist/style/components/loading.scss";
+@import "~taro-ui/dist/style/components/image-picker.scss";
+@import "~taro-ui/dist/style/components/input.scss";
+@import "~taro-ui/dist/style/components/textarea.scss";
+@import "~taro-ui/dist/style/components/float-layout.scss";
+@import "~taro-ui/dist/style/components/tag.scss";
+.find {
+  position: relative;
+  &-fromview {
+    padding: 2vw;
+    &-input {
+      padding: 2vw;
+      color: #aaa7a7;
+    }
+    &-addtional {
+      display: flex;
+      font-size: small;
+      &text {
+        display: flex;
+        font-size: small;
+      }
+    }
+    &-category {
+      padding: 2vw;
+      &-texta {
+        padding: 5px;
+        color: #aaa7a7;
+        border: 1px solid #aaa7a7;
+        margin-left: 5px;
+        border-radius: 4px;
+        font-size: small;
+      }
+    }
+  }
+}
+.at-input {
+  margin-left: 0;
+}
+.at-input__title {
+  font-size: small;
+}
+.at-input input {
+  font-size: small;
+}
+.at-textarea {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.at-textarea__textarea {
+  font-size: small;
+}
+.at-button--primary {
+  background-color: #d62c75;
+  border-color: #d62c75;
+}

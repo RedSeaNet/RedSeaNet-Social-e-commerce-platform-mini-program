@@ -1,0 +1,89 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/input.scss";
+@import "~taro-ui/dist/style/components/button.scss";
+@import "~taro-ui/dist/style/components/loading.scss";
+@import "~taro-ui/dist/style/components/action-sheet.scss";
+.charge-balance {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  &-title {
+    padding: 6vw 2vw;
+    Text {
+      font-size: large;
+      color: #d62c75;
+    }
+  }
+  &-action {
+    padding: 8vw 2vw;
+  }
+  &-alert {
+    position: fixed;
+    height: 100%;
+    //overflow: auto;
+    width: 100%;
+    background-color: rgba(116, 116, 116, 0.5);
+    z-index: 200;
+    display: flex;
+    bottom: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    &-title {
+      height: 80px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border-bottom: 1px solid #f3f2f2;
+    }
+
+    &-account {
+      height: 150px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border-bottom: 1px solid #f3f2f2;
+      & > text {
+        font-size: large;
+        color: #d62c75;
+        font-weight: bold;
+      }
+    }
+
+    &-pay {
+      height: 80px;
+      background-color: white;
+      border-bottom: 1px solid #f3f2f2;
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      &-text {
+        margin-right: auto;
+        margin-left: 20px;
+      }
+
+      &-icon {
+        margin-right: 20px;
+      }
+    }
+
+    &-button {
+      height: 80px;
+      width: 100%;
+      background-color: #d62c75;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.at-button--primary {
+  background-color: #d62c75;
+  border-color: #d62c75;
+}

@@ -1,0 +1,18 @@
+@import "~taro-ui/dist/style/components/tabs.scss";
+.message {
+  position: relative;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+  &-my {
+    &-unread {
+    }
+    &-read {
+    }
+  }
+  &-system {
+    &-unread {
+    }
+    &-read {
+    }
+  }
+}

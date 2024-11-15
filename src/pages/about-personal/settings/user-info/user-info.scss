@@ -1,0 +1,67 @@
+@import "~taro-ui/dist/style/components/avatar.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/input.scss";
+.user-info {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 20px 10px 10px;
+  background: #ffffff;
+
+  &-item {
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    &-left {
+      width: 30%;
+      align-items: center;
+      display: flex;
+      justify-content: flex-start;
+    }
+    &-sex {
+      display: flex;
+      flex-direction: row;
+      &-v {
+        padding-right: 15px;
+        &-img {
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  &-button {
+    background-color: rgb(207, 8, 94);
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+    margin: 25px;
+
+    > text {
+      color: white;
+      font-size: 30px;
+    }
+  }
+  &-logoutButton {
+    background-color: rgb(77, 75, 76);
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+    margin: 25px;
+
+    > text {
+      color: white;
+      font-size: 30px;
+    }
+  }
+  &-cropper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+}

@@ -1,0 +1,13 @@
+.coupons {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 20px 10px 10px;
+  background: #ffffff;
+  &-item {
+    background-color: red;
+    border-radius: 5vw;
+    padding: 5vw;
+    margin: 2vw 4vw;
+  }
+}

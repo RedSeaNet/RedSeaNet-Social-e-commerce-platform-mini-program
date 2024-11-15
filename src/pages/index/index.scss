@@ -1,0 +1,40 @@
+@import "~taro-ui/dist/style/components/button.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/search-bar.scss";
+.searchview {
+  width: 98vw;
+  border-radius: 6vw;
+
+  &-searchInput {
+    width: 99vw;
+  }
+}
+.recomment {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 5vw;
+  &-item {
+    width: 25vw;
+    text-align: center;
+    & > text {
+      font-size: small;
+      color: #797979;
+    }
+  }
+}
+.categoryContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+.at-search-bar {
+  padding: 24px 12px;
+}
+.at-search-bar__action {
+  background-color: #d62c75;
+}
+.at-search-bar__input-cnt {
+  border-radius: 10px;
+}

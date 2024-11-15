@@ -1,0 +1,35 @@
+@import "~taro-ui/dist/style/components/button.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/toast.scss";
+@import "~taro-ui/dist/style/components/float-layout.scss";
+@import "~taro-ui/dist/style/components/textarea.scss";
+@import "~taro-ui/dist/style/components/loading.scss";
+.find {
+  position: relative;
+  &-category {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    &-texta {
+      padding: 5px;
+      margin-left: 5px;
+      font-size: small;
+      display: inline-block;
+    }
+  }
+  &-list {
+    width: 100%;
+  }
+  &-sendreviewbutton {
+    padding-top: 1vh;
+  }
+}
+
+.at-textarea__textarea {
+  font-size: small;
+}
+.at-button--primary {
+  background-color: #d62c75;
+  border-color: #d62c75;
+}

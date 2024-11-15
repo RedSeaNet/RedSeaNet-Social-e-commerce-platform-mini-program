@@ -1,0 +1,23 @@
+.home-category {
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5vw 0;
+  &-item {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    align-items: center;
+    padding: 3vw 0;
+    &-img {
+      width: 14vw;
+    }
+
+    &-name {
+      padding: 5px 0;
+      font-size: 24px;
+    }
+  }
+}

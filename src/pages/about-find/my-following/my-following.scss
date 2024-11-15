@@ -1,0 +1,58 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+.find {
+  position: relative;
+  &-list {
+    width: 100vw;
+    &-container {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      &-customer {
+        display: flex;
+        width: 96vw;
+        align-items: center;
+        padding: 2vw;
+        &-avatar {
+          width: 15vw;
+          & > image {
+            width: 11vw;
+            height: 11vw;
+            border-radius: 4vw;
+            padding: 2vw;
+          }
+        }
+        &-right {
+          width: 85vw;
+          padding-left: 2vw;
+          &-username {
+            color: #313030;
+            display: block;
+          }
+          &-date {
+            color: #aaa7a7;
+            font-size: small;
+          }
+        }
+      }
+      &-title {
+        color: #707070;
+        font-size: small;
+        padding-bottom: 2vw;
+        padding-left: 16vw;
+        padding-right: 1vw;
+      }
+      &-bottom {
+        text-align: right;
+        color: #707070;
+        font-size: small;
+        padding-right: 1vw;
+        &-button {
+          background-color: #d62c75;
+          border-radius: 2vw;
+          padding: 1vw 2vw;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.bulkc {
+  background-color: #ff448f;
+  min-height: 100vh;
+  &-itemc {
+    width: 88vw;
+    margin: 2vw 4vw;
+    background-color: #fff;
+    border-radius: 2vw;
+    display: flex;
+    padding: 2vw;
+    &-left {
+      width: 25vw;
+      &-image {
+        width: 24vw;
+      }
+    }
+    &-right {
+      width: 62vw;
+      &-bottom {
+        display: flex;
+        &-pricec {
+          width: 50%;
+          &-o {
+            display: block;
+            text-decoration: line-through;
+            font-size: small;
+            color: gray;
+          }
+          &-b {
+            display: block;
+          }
+        }
+        &-action {
+          width: 50%;
+          > text {
+            font-size: small;
+            background-color: #ff448f;
+            display: inline-block;
+            padding: 2vw 4vw;
+            border-radius: 4vw;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

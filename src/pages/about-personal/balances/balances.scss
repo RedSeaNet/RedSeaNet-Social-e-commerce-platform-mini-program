@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+  justify-content: space-around;
+  padding-top: 10px;
+  &-header {
+    padding: 5vw;
+    display: flex;
+    align-items: center;
+    &-total {
+      color: #d62c75;
+      font-size: xx-large;
+    }
+  }
+  &-item {
+    width: 96vw;
+    background-color: #ffffff;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 2vw;
+    &-left {
+      width: 62vw;
+      display: flex;
+      flex-direction: column;
+      &-comment {
+        font-size: small;
+      }
+      &-date {
+        font-size: x-small;
+        color: #707070;
+      }
+    }
+    &-right {
+      width: 30vw;
+      &-amount {
+        text-align: right;
+        color: #d62c75;
+      }
+    }
+  }
+}

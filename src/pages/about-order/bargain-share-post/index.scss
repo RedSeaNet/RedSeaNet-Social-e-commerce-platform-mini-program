@@ -1,0 +1,17 @@
+.sharePost {
+  padding-top: 10px;
+  background: #f8f8f8;
+  height: 125vh;
+  position: relative;
+
+  &-title {
+    color: #e8c787;
+    font-size: small;
+    text-align: center;
+    padding: 2vw;
+  }
+
+  &-canvas {
+    margin: 2vw;
+  }
+}

@@ -1,0 +1,12 @@
+.container {
+  width: 100vw;
+  height: 50vh;
+  &-item {
+    width: 100vw;
+    height: 50vh;
+    text-align: center;
+    & > image {
+      height: 50vh;
+    }
+  }
+}

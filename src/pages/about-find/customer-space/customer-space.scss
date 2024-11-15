@@ -1,0 +1,138 @@
+@import "~taro-ui/dist/style/components/avatar.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/input.scss";
+@import "~taro-ui/dist/style/components/button.scss";
+@import "~taro-ui/dist/style/components/toast.scss";
+@import "~taro-ui/dist/style/components/float-layout.scss";
+@import "~taro-ui/dist/style/components/loading.scss";
+.user {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  &-header {
+    position: absolute;
+    top: 0;
+    padding: 1vw;
+  }
+  & Text {
+    margin-left: 3vw;
+  }
+  &-login {
+    background-color: rgb(245, 222, 182);
+    padding-top: 10vh;
+    &-avatarandset {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      width: 90vw;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      &-avatar {
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        &-img {
+          width: 20vw;
+          height: 20vw;
+          border-radius: 15vw;
+        }
+        &-logout {
+          font-size: x-small;
+          color: #707070;
+        }
+      }
+      &-set {
+        width: 25vw;
+        display: flex;
+        justify-content: flex-end;
+        &-follow {
+          font-size: x-small;
+          width: 16vw;
+        }
+      }
+    }
+    &-summary {
+      display: flex;
+      justify-content: space-between;
+      padding: 5vw;
+    }
+  }
+  &-posts {
+    width: 100%;
+    &-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      &-customer {
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        &-avatar {
+          width: 15vw;
+          & > image {
+            width: 11vw;
+            height: 11vw;
+            border-radius: 4vw;
+            padding: 2vw;
+          }
+        }
+        &-right {
+          width: 85vw;
+          padding-left: 2vw;
+          &-username {
+            color: #313030;
+            display: block;
+          }
+          &-date {
+            color: #aaa7a7;
+            font-size: small;
+          }
+        }
+      }
+      &-title {
+        color: #707070;
+        font-size: small;
+        padding-bottom: 2vw;
+        padding-left: 16vw;
+        padding-right: 1vw;
+      }
+      &-images {
+        padding-left: 16vw;
+        & > image {
+          width: 20vw;
+          height: 20vw;
+          border-radius: 1vw;
+          margin: 1vw;
+        }
+      }
+      &-bottom {
+        text-align: right;
+        color: #707070;
+        font-size: small;
+        padding-right: 1vw;
+      }
+    }
+  }
+  &-sendreviewbutton {
+    padding-top: 1vh;
+  }
+}
+
+.at-textarea__textarea {
+  font-size: small;
+}
+.at-button--primary {
+  background-color: #d62c75;
+  border-color: #d62c75;
+  font-size: x-small;
+  line-height: 50px;
+  height: 50px;
+}
+.at-button--secondary {
+  background-color: #fff;
+  border-color: #d62c75;
+  font-size: x-small;
+  line-height: 50px;
+  height: 50px;
+  color: #d62c75;
+}

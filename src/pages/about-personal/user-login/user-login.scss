@@ -1,0 +1,132 @@
+@import "~taro-ui/dist/style/components/float-layout.scss";
+@import "~taro-ui/dist/style/components/input-number.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/button.scss";
+@import "~taro-ui/dist/style/components/loading.scss";
+@import "~taro-ui/dist/style/components/toast.scss";
+.user-login {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 20px 10px 10px;
+  background: #ffffff;
+  &-header {
+    position: absolute;
+    top: 0;
+    padding: 1vw;
+  }
+  &-tipv {
+    width: 100%;
+    padding-top: 10vh;
+    &-title {
+      font-size: x-large;
+      color: rgb(207, 8, 94);
+      display: block;
+      padding: 20px 0;
+    }
+    &-tip {
+      color: #707070;
+      display: block;
+      font-size: small;
+    }
+  }
+  &-item {
+    position: relative;
+    border: 0 solid #d8d8d8;
+    border-bottom-width: 1px;
+    padding-top: 20px;
+
+    &-input {
+      height: 100px;
+      color: black;
+      font-size: 24px;
+      &-placeholder {
+        color: #666666;
+      }
+    }
+  }
+
+  &-button {
+    background-color: rgb(207, 8, 94);
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+    margin: 25px;
+    > text {
+      color: white;
+      font-size: 30px;
+    }
+  }
+  &-regandforget {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    &-title {
+      color: #707070;
+      font-size: small;
+    }
+  }
+  &-oauthtitle {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    &-c {
+      height: 2px;
+      background-color: #f4f5f8;
+      width: 30%;
+      &-title {
+        font-size: 14px;
+        color: #adacb4;
+        text-align: center;
+      }
+      &-divider {
+        height: 2px;
+        background-color: #f4f5f8;
+        width: 30%;
+      }
+    }
+  }
+  &-oauth {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    &-wechat {
+      border: none;
+      box-shadow: none;
+      font-size: x-small;
+      padding: 1vw;
+      width: 16vw;
+      background: transparent;
+      outline: none;
+      display: inline-block;
+      margin-top: 2vw;
+      &-img {
+        height: 16vw;
+        width: 16vw;
+      }
+    }
+  }
+}
+button[type="primary"] {
+  color: #fff;
+  background-color: #fff;
+  border: none;
+}
+button {
+  color: #fff;
+  background-color: #fff;
+  border: none;
+}
+button::after {
+  border: none;
+}
+.at-button--primary {
+  background-color: #d62c75;
+  border-color: #d62c75;
+}

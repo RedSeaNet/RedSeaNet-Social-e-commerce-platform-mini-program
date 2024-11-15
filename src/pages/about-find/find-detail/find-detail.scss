@@ -1,0 +1,132 @@
+@import "~taro-ui/dist/style/components/button.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/toast.scss";
+@import "~taro-ui/dist/style/components/float-layout.scss";
+@import "~taro-ui/dist/style/components/textarea.scss";
+@import "~taro-ui/dist/style/components/loading.scss";
+@import "~taro-ui/dist/style/components/avatar.scss";
+.find {
+  position: relative;
+  &-action {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+    align-items: center;
+    &-share {
+      background-color: white;
+      width: 8vw;
+      height: 8vw;
+      margin: 2vw 1vw;
+      border-radius: 8vw;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+      border: 1px solid #f8f8f8;
+      box-shadow: 0px 0px 10px 5px #fff inset;
+      font-size: x-small;
+      padding: 0;
+    }
+  }
+  &-title {
+    padding: 2vw;
+    text-align: center;
+    &-text {
+      font-size: small;
+    }
+  }
+  &-customer {
+    display: flex;
+    padding: 2vw;
+    align-items: center;
+    &-detail {
+      width: 68vw;
+      display: flex;
+      align-items: center;
+      & > image {
+        width: 12vw;
+        border-radius: 50%;
+      }
+      & > text {
+        color: #797979;
+        font-size: small;
+      }
+    }
+    &-action {
+      width: 28vw;
+      text-align: right;
+      &-follow {
+        background-color: #d62c75;
+        border-radius: 2vw;
+        color: #fff;
+        font-size: x-small;
+        padding: 10px;
+      }
+      &-cancelfollow {
+        border-radius: 2vw;
+        color: #d62c75;
+        font-size: x-small;
+        padding: 10px;
+        border: 1px solid #d62c75;
+      }
+    }
+  }
+  &-content {
+    padding: 2vw;
+  }
+  &-review {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 5vh;
+    &-title {
+      color: #797979;
+      border-bottom: 1px dotted #f8f8f8;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-item {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2vw;
+      &-left {
+        width: 16vw;
+        display: flex;
+        flex-direction: column;
+        &-avatar {
+          width: 8vw;
+          height: 8vw;
+          border-radius: 8vw;
+        }
+        &-username {
+          font-size: small;
+          color: #797979;
+        }
+      }
+      &-right {
+        width: 75vw;
+        &-content {
+          font-size: small;
+          color: #797979;
+          display: block;
+        }
+        &-date {
+          font-size: x-small;
+          color: #797979;
+          display: block;
+        }
+      }
+    }
+  }
+  &-sendreviewbutton {
+    padding-top: 1vh;
+  }
+}
+.at-textarea__textarea {
+  font-size: small;
+}
+.at-button--primary {
+  background-color: #d62c75;
+  border-color: #d62c75;
+}

@@ -1,0 +1,15 @@
+.index {
+  background: #ffffff;
+  &-item {
+    flex-direction: "row";
+    height: 40px;
+    border-bottom: 1px rgb(205, 205, 205) solid;
+    padding: 20px 10px;
+    align-items: "center";
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: flex;
+  }
+}

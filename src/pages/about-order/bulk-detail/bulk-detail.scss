@@ -1,0 +1,145 @@
+@import "~taro-ui/dist/style/components/float-layout.scss";
+@import "~taro-ui/dist/style/components/input-number.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/button.scss";
+@import "~taro-ui/dist/style/components/loading.scss";
+@import "~taro-ui/dist/style/components/toast.scss";
+@import "~taro-ui/dist/style/components/progress.scss";
+@import "~taro-ui/dist/style/components/steps.scss";
+.product-detail-container {
+  &-title {
+    width: 98vw;
+    padding: 0 1vw;
+  }
+  &-price {
+    width: 98vw;
+    display: flex;
+    padding: 0 1vw;
+    justify-content: space-between;
+    &-current {
+      color: #d62c75;
+    }
+    &-people {
+      color: #707070;
+      font-size: x-small;
+    }
+    &-msrp {
+      color: #707070;
+      text-decoration: line-through;
+      font-size: x-small;
+    }
+    &-sales {
+      color: #707070;
+      font-size: small;
+    }
+  }
+  &-step {
+    padding-top: 1vw;
+  }
+  &-soldc {
+    color: #707070;
+    &-item {
+      padding: 2vw;
+      &-title {
+        display: flex;
+        justify-content: space-between;
+      }
+      &-action {
+        text-align: right;
+        &-button {
+          background-color: #d62c75;
+          color: #fff;
+          font-size: x-small;
+          padding: 2vw 4vw;
+          border-radius: 4vw;
+          margin: 1vw;
+        }
+      }
+    }
+  }
+  &-share {
+    width: 98vw;
+    padding: 0 1vw;
+    color: #707070;
+    text-align: right;
+
+    &-button {
+      border: none;
+      box-shadow: none;
+      font-size: x-small;
+      padding: 1vw;
+      line-height: 1.2;
+      width: 30vw;
+      background: transparent;
+      outline: none;
+      display: inline-block;
+      margin-top: 2vw;
+      > text {
+        color: #707070;
+        font-size: small;
+      }
+    }
+  }
+  &-description {
+    text-align: center;
+    padding-top: 15px;
+    & > image {
+      width: 100%;
+    }
+  }
+  &-buttom {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    width: 100vw;
+    padding: 1vw;
+  }
+  &-option {
+    &-price {
+      width: 100%;
+      padding: 1vw;
+    }
+    &-quantity {
+      width: 100%;
+      padding: 1vw;
+    }
+    &-optionview {
+      width: 100%;
+      padding: 1vw;
+      &-option {
+        & > Text {
+          padding: 10px;
+          display: inline-block;
+        }
+        &-value {
+          & > Text {
+            padding: 10px 20px;
+            margin: 10px 5px;
+            border: 1px solid #f5d5b6;
+            background-color: #f5d5b6;
+            color: #000;
+            display: inline-block;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+    &-optionaction {
+      padding-top: 4vh;
+    }
+  }
+}
+button::after {
+  border: none;
+}
+.at-button--primary {
+  background-color: #d62c75;
+  border-color: #d62c75;
+}
+.at-steps__item--active .at-steps__circular {
+  background-color: #d62c75;
+}
+.at-steps__title {
+  font-size: x-small;
+  color: #707070;
+}

@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+  justify-content: space-around;
+  //align-items: center;
+  padding-top: 10px;
+  //height: 100%;
+  &-item {
+    width: 48%;
+    background-color: #ffffff;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+
+    &-img {
+      width: 330px;
+      height: 330px;
+      border-radius: 6px;
+      position: relative;
+    }
+    &-before-load {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+
+    &-desc {
+      width: 100%;
+      font-size: small;
+      height: 75px;
+      color: #707070;
+      text-align: left;
+      word-break: break-all;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      box-orient: vertical;
+      /* 必须保留，autoprefixer 会自动删除过时元素 */
+      /* autoprefixer: off */
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+    &-price {
+      text-align: right;
+      color: #d62c75;
+    }
+  }
+}

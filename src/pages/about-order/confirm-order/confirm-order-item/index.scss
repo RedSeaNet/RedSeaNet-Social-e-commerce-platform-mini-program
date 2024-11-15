@@ -1,0 +1,56 @@
+@import "~taro-ui/dist/style/components/action-sheet.scss";
+.confirm-order-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 10px;
+  &-store {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    height: 50px;
+    align-items: center;
+    &-icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+    }
+  }
+
+  &-detail {
+    height: 180px;
+    border-bottom: 1px solid #f3f2f2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    &-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+    }
+    &-info {
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      height: 150px;
+      &-name {
+        color: #707070;
+        font-size: small;
+      }
+      &-option {
+        color: #707070;
+        font-size: x-small;
+      }
+      &-end {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+}

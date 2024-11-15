@@ -1,0 +1,51 @@
+@import "~taro-ui/dist/style/components/avatar.scss";
+@import "~taro-ui/dist/style/components/input.scss";
+@import "~taro-ui/dist/style/components/switch.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+.update-address {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 20px 10px 10px;
+  background: #ffffff;
+
+  &-item {
+    position: relative;
+    padding-top: 20px;
+
+    &-input {
+      font-size: small;
+      color: #666666;
+
+      &-placeholder {
+        font-size: small;
+        color: #666666;
+      }
+    }
+    &-picker {
+      font-size: small;
+      color: #666666;
+      border-bottom: 1px solid #eee;
+      margin-left: 24px;
+      margin-right: 24px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+  &-button {
+    background-color: rgb(207, 8, 94);
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+    margin: 25px;
+
+    > text {
+      color: white;
+      font-size: small;
+    }
+  }
+}
+.at-switch__title {
+  color: #666;
+  font-size: small;
+}

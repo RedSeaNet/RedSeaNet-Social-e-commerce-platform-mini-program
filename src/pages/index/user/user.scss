@@ -1,0 +1,144 @@
+@import "~taro-ui/dist/style/components/avatar.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/input.scss";
+.user {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  &-header {
+    position: absolute;
+    top: 0;
+    padding: 1vw;
+  }
+  &-login {
+    background-color: rgb(245, 222, 182);
+    padding-top: 10vh;
+    &-avatarandset {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      padding-left: 5%;
+      padding-right: 5%;
+      &-avatar {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        &-img {
+          width: 20vw;
+          height: 20vw;
+          border-radius: 15vw;
+        }
+        &-username {
+          display: inline-block;
+          padding: 2vw;
+        }
+        &-logout {
+          color: #707070;
+          display: inline-block;
+          padding: 2vw;
+        }
+      }
+      &-set {
+        width: 30%;
+        text-align: right;
+      }
+    }
+    &-summary {
+      display: flex;
+      flex-direction: row;
+      padding: 4vw;
+      &-view {
+        width: 25%;
+        &-number {
+          width: 100%;
+          text-align: center;
+          display: block;
+          font-size: x-large;
+          font-weight: bold;
+        }
+        &-title {
+          width: 100%;
+          text-align: center;
+          display: block;
+          color: #707070;
+        }
+      }
+    }
+    &-rich {
+      display: flex;
+      flex-direction: row;
+      padding: 0 10px;
+      &-v {
+        background-color: rgb(77, 79, 92);
+        height: 12vh;
+        width: 100%;
+        border-top-left-radius: 5vw;
+        border-top-right-radius: 5vw;
+        display: flex;
+        justify-content: center;
+        &-left {
+          color: #fff;
+          width: 45vw;
+          text-align: center;
+          border-right: 1px solid #f8f8f8;
+          margin-top: 2vw;
+          font-size: small;
+          height: 10vh;
+          &-amount {
+            font-size: x-large;
+            text-align: center;
+            display: block;
+          }
+        }
+        &-right {
+          width: 45vw;
+          text-align: center;
+          margin-top: 2vw;
+          line-height: 10vh;
+          &-button {
+            background-color: rgb(245, 222, 182);
+            border-radius: 4vw;
+            padding: 1vw 4vw;
+            color: #797979;
+            font-size: small;
+          }
+        }
+      }
+    }
+  }
+  &-action {
+    &-titleContainer {
+      padding: 2vw;
+      display: flex;
+      justify-content: space-between;
+
+      &-title {
+        font-size: large;
+      }
+      &-all {
+        font-size: x-small;
+        color: #797979;
+      }
+    }
+
+    &-buttonview {
+      display: flex;
+      width: 96vw;
+      margin: 2vw;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #f8f8f8;
+      &-button {
+        text-align: center;
+        padding: 4vw;
+        & > image {
+          width: 8vw;
+          height: 8vw;
+        }
+        & > text {
+          display: block;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

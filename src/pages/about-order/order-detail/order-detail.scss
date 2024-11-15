@@ -1,0 +1,81 @@
+@import "~taro-ui/dist/style/components/avatar.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/input.scss";
+
+.order-detail {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: #f4f4f4;
+  &-status {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 5vw;
+    &-icon {
+      width: 30vw;
+      height: 30vw;
+      border-radius: 50%;
+      background-color: #f6644d;
+      text-align: center;
+      line-height: 30vw;
+    }
+  }
+  &-shipping {
+    padding: 2vw;
+    background: #ffffff;
+    &-info {
+      font-size: small;
+      color: #797979;
+    }
+  }
+  &-store {
+    padding: 2vw;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    & > image {
+      width: 5vw;
+      height: 5vw;
+    }
+  }
+  &-items {
+    padding: 2vw;
+    background: #ffffff;
+    &-item {
+      display: flex;
+
+      &-imgview {
+        &-img {
+          width: 20vw;
+          height: 20vw;
+          border-radius: 1vw;
+        }
+      }
+      &-right {
+        font-size: small;
+        color: #797979;
+        padding-left: 4vw;
+        width: 75vw;
+        &-option {
+          > text {
+            font-size: x-small;
+          }
+        }
+        &-price {
+          text-align: right;
+          color: #d62c75;
+        }
+      }
+    }
+  }
+  &-bottom {
+    margin-top: 2vw;
+    font-size: small;
+    color: #797979;
+    padding: 5vw;
+    line-height: 3vh;
+    background-color: #fff;
+  }
+}

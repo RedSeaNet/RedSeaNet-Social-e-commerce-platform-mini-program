@@ -1,0 +1,65 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/tag.scss";
+@import "~taro-ui/dist/style/components/avatar.scss";
+.container {
+  width: 96vw;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: flex-start;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vh;
+  &-customer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    &-avatar {
+      width: 15vw;
+      & > image {
+        width: 11vw;
+        height: 11vw;
+        border-radius: 4vw;
+        padding: 2vw;
+      }
+    }
+    &-right {
+      width: 85vw;
+      padding-left: 2vw;
+      text-align: left;
+      &-username {
+        color: #313030;
+        display: block;
+        text-align: left;
+      }
+      &-date {
+        color: #aaa7a7;
+        font-size: small;
+        text-align: left;
+      }
+    }
+  }
+  &-title {
+    color: #707070;
+    font-size: small;
+    padding-bottom: 2vw;
+    padding-left: 16vw;
+    padding-right: 1vw;
+  }
+  &-images {
+    padding-left: 16vw;
+    & > image {
+      width: 20vw;
+      height: 20vw;
+      border-radius: 1vw;
+      margin: 1vw;
+    }
+  }
+  &-bottom {
+    text-align: right;
+    color: #d62c75;
+    font-size: small;
+    padding-right: 2vw;
+    width: 96vw;
+  }
+}

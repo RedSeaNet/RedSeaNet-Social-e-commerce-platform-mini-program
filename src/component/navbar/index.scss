@@ -1,0 +1,35 @@
+.navbarC {
+  height: 80px;
+  background-color: white;
+  width: 96vw;
+
+  &-navbarWrap {
+    height: 75px;
+    padding-bottom: 4px;
+    position: fixed;
+    background-color: white;
+    z-index: 999;
+    width: 96vw;
+    margin-right: 2vw;
+    top: 0;
+
+    &-navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      &-left {
+        width: 37vw;
+        align-items: center;
+        justify-content: left;
+        display: flex;
+      }
+
+      &-center {
+        display: flex;
+        justify-content: center;
+      }
+
+    }
+  }
+}

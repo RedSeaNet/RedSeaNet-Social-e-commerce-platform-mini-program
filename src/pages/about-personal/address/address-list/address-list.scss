@@ -1,0 +1,60 @@
+.address-list {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: rgb(236, 236, 236);
+  &-add {
+    background-color: #fff;
+    padding: 1vh;
+    &-img {
+      margin-right: 1vh;
+      width: 2vh;
+      height: 2vh;
+    }
+  }
+  &-item {
+    display: flex;
+    flex-direction: row;
+    padding: 1vw;
+    margin: 5px 0;
+    background-color: white;
+    align-items: center;
+    color: #303030;
+    &-left {
+      width: 61vw;
+      padding: 2vw;
+      font-size: small;
+      > text {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      &-default {
+        color: #fff;
+        border-radius: 10px;
+        background-color: #d62c75;
+        margin-top: 1vw;
+        margin-right: 1vw;
+        padding: 1vw;
+        display: inline-block;
+        font-size: x-small;
+      }
+    }
+
+    &-right {
+      width: 35vw;
+      height: 10vh;
+      align-items: center;
+      line-height: 10vh;
+      text-align: center;
+      & > text {
+        border: 1px solid #797979;
+        color: #797979;
+        border-radius: 2vw;
+        font-size: x-small;
+        padding: 1vw 2vw;
+        margin-left: 1vw;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/tag.scss";
+.systemcontainer {
+  background-color: #fff;
+  padding: 2vw;
+  flex-direction: column;
+  margin-top: 1vh;
+  &-titlec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted #f8f8f8;
+    &-time {
+      font-size: xx-small;
+      &-new {
+        background-color: #d62c75;
+        padding: 1vw 2vw;
+        border-radius: 1vw;
+        color: #fff;
+        font-size: xx-small;
+        margin-left: 1vw;
+      }
+    }
+  }
+  &-contentc {
+    padding: 2vw;
+  }
+}

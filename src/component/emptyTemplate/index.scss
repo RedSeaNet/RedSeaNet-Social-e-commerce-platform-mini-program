@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  &-emptyview {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    color: #C2C2C2;
+    font-size: small;
+
+    &-image {
+      width: 30vw;
+      height: 30vw;
+    }
+  }
+
+}

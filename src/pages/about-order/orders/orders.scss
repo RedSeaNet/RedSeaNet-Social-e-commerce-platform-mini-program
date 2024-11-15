@@ -1,0 +1,115 @@
+@import "~taro-ui/dist/style/components/search-bar.scss";
+@import "~taro-ui/dist/style/components/button.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+.orders {
+  position: relative;
+  background-color: rgb(238, 238, 238);
+  &-search {
+  }
+  &-filter {
+    background-color: #fff;
+    text-align: center;
+    & > text {
+      display: inline-block;
+      padding: 2vw;
+      font-size: small;
+      margin: 0 2vw;
+    }
+  }
+  &-line {
+    margin-top: 16px;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 16px;
+    padding: 2vw;
+    &-title {
+      text-align: left;
+      padding: 20px 6px;
+      border-bottom: 1px solid rgb(238, 238, 238);
+      &-store {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-icon {
+          display: flex;
+          align-items: center;
+          & > image {
+            width: 5vw;
+            height: 5vw;
+          }
+          &-status {
+            font-size: small;
+            color: #797979;
+          }
+        }
+      }
+      &-number {
+        font-size: x-small;
+        color: #797979;
+      }
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: row;
+      padding-left: 8px;
+      padding-top: 1vw;
+
+      &-imgview {
+        &-img {
+          width: 20vw;
+          height: 20vw;
+          border-radius: 1vw;
+        }
+      }
+
+      &-right {
+        padding-left: 2vw;
+        width: 70vw;
+        &-name {
+          font-size: small;
+          color: #797979;
+          &-name {
+            display: block;
+          }
+          &-option {
+            display: block;
+            font-size: x-small;
+          }
+        }
+        &-price {
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          font-size: medium;
+          color: #d62c75;
+        }
+      }
+    }
+    &-createdat {
+      font-size: small;
+      color: #797979;
+      text-align: right;
+    }
+    &-total {
+      font-size: small;
+      color: #797979;
+      text-align: right;
+    }
+    &-action {
+      font-size: x-small;
+      color: #797979;
+      text-align: right;
+      border-top: 1px solid rgb(238, 238, 238);
+      margin-top: 1vw;
+      & > text {
+        padding: 1vw 4vw;
+        border-radius: 2vw;
+        border: 1px solid #797979;
+        display: inline-block;
+        margin: 4vw;
+      }
+    }
+  }
+}
